@@ -298,7 +298,7 @@ yarn start
 Eg:
 ```javascript
 export const headerData = {
-    name: '-- YOUR NAME --',
+    name: 'Abdul Basit',
     title: '-- YOUR TITLE --',
     desciption:'-- DESCRIPTION --',
     image: '-- IMAGE --',
@@ -311,7 +311,7 @@ import resume from '../assets/pdf/resume.pdf'
 import profileImg from '../assets/png/profileImg'
 
 export const headerData = {
-    name: '-- YOUR NAME --',
+    name: 'Abdul Basit',
     title: '-- YOUR TITLE --',
     desciption:'-- DESCRIPTION --',
     image: profileImg,
