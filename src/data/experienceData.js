@@ -1,23 +1,23 @@
 export const experienceData = [
     {
+        id: 3,
+        company: 'Ropstam Solutions Inc.',
+        jobtitle: 'Senior React Native Developer',
+        startYear: '2024',
+        endYear: 'Present'
+    },
+    {
         id: 1,
-        company: 'Globex Corporation',
-        jobtitle: 'Frontend Developer',
-        startYear: '2018',
-        endYear: '2019'
+        company: 'Alpha Squad Technologies',
+        jobtitle: 'Associate React Native Developer',
+        startYear: '2023',
+        endYear: '2024'
     },
     {
         id: 2,
-        company: 'Vehement Capital Partners',
-        jobtitle: 'Backend Developer',
-        startYear: '2019',
-        endYear: '2020'
-    },
-    {
-        id: 3,
-        company: 'Wonka Industries',
-        jobtitle: 'Marketing',
-        startYear: '2020',
-        endYear: 'Present'
+        company: 'DoWell Research',
+        jobtitle: 'Entry Level React Native Developer',
+        startYear: '2021',
+        endYear: '2023'
     },
 ]

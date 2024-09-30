@@ -1,33 +1,33 @@
 export const achievementData = {
-    bio : "Putting quantified achievements on a resume is great, but I just don’t work with hard numbers. I have no data to support the quality of my work. If you have lots of relevant experience, the heading statement of your resume will be a summary.",
+    bio : "I am passionate about creating seamless mobile applications that deliver high-quality user experiences. My focus is on building apps that solve real-world problems and help businesses grow. With a strong foundation in React Native, I continually strive to stay ahead in the mobile development landscape.",
     achievements : [
         {
             id : 1,
-            title : 'Google Cloud certification',
-            details : 'Google Cloud certifications validate your expertise and showcase your ability to transform businesses with Google Cloud technology.',
-            date : 'Aug 20, 2019',
-            field : 'Automation',
-            image : 'https://images.unsplash.com/photo-1573141597928-403fcee0e056?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=667&q=80'
+            title : 'React Native Mobile App Development Certification',
+            details : 'Certification that validates expertise in building cross-platform mobile applications using React Native.',
+            date : 'June 15, 2021',
+            field : 'Mobile Development',
+            image : "https://viitorcloud.com/blog/wp-content/uploads/2022/06/React-Native-Framework-for-Mobile-App-Development.jpg"
         },
         {
             id : 2,
-            title : 'AWS Certification',
-            details : 'Validate technical skills and cloud expertise to grow your career and business.',
-            date : 'Aug 20, 2019',
-            field : 'Automation',
-            image : 'https://images.unsplash.com/photo-1523474253046-8cd2748b5fd2?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80'
+            title : 'Firebase Expert Certification',
+            details : 'Recognized for proficiency in integrating Firebase services like authentication, real-time databases, and cloud messaging into mobile applications.',
+            date : 'July 10, 2022',
+            field : 'Mobile Backend',
+            image : 'https://www.appcoda.com/content/images/wordpress/2016/11/firebase_logo_shot.png'
         },
         {
             id : 3,
-            title : 'Professional Data Engineer Certification',
-            details : 'Professional Data Engineers enable data-driven decision making by collecting, transforming, and publishing data.',
-            date : 'Aug 20, 2019',
-            field : 'Automation',
-            image : 'https://images.unsplash.com/photo-1489389944381-3471b5b30f04?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80'
+            title : 'App Performance Optimization Award',
+            details : 'Awarded for optimizing mobile app performance, resulting in improved load times and overall user experience.',
+            date : 'May 5, 2023',
+            field : 'Mobile Development',
+            image : 'https://bs-uploads.toptal.io/blackfish-uploads/components/open_graph_image/8959850/og_image/optimized/1030-android-performance-tips-tools-Waldek_Social-6af61d08bb4ac70e59ac7e03a4d732dc.png'
         }
-
     ]
 }
+
 
 
 // Do not remove any fields.

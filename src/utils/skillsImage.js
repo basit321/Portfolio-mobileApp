@@ -11,6 +11,7 @@ import javascript from '../assets/svg/skills/javascript.svg'
 import nextJS from '../assets/svg/skills/nextJS.svg'
 import nuxtJS from '../assets/svg/skills/nuxtJS.svg'
 import react from '../assets/svg/skills/react.svg'
+import reactnative from '../assets/svg/skills/reactnative.svg'
 import svelte from '../assets/svg/skills/svelte.svg'
 import typescript from '../assets/svg/skills/typescript.svg'
 import vue from '../assets/svg/skills/vue.svg'
@@ -72,14 +73,19 @@ import picsart from '../assets/svg/skills/picsart.svg'
 import sketch from '../assets/svg/skills/sketch.svg'
 import unity from '../assets/svg/skills/unity.svg'
 import wolframalpha from '../assets/svg/skills/wolframalpha.svg'
-
+import expo from '../assets/svg/skills/expo.svg'
+import androidstudio from '../assets/svg/skills/androidstudio.svg'
+import xcode from '../assets/svg/skills/xcode.svg'
 import canva from '../assets/svg/skills/canva.svg'
+import redux from '../assets/svg/skills/redux.svg'
+import github from '../assets/svg/skills/github.svg'
+
 
 
 export const skillsImage = (skill) => {
     const skillID = skill.toLowerCase();
     switch (skillID) {
-        case 'gcp':
+        case 'gcpss':
             return gcp;
         case 'html':
             return html;
@@ -227,6 +233,21 @@ export const skillsImage = (skill) => {
             return wolframalpha;
         case 'canva':
             return canva;
+        case 'react native':
+            return reactnative;
+        case 'expo':
+            return expo;
+        case 'android studio':
+            return androidstudio;
+        case 'xcode':
+            return xcode;
+        case 'redux':
+            return redux;
+
+        case 'github':
+            return github;
+
+            
         default:
             break;
     }
