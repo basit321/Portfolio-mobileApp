@@ -1,10 +1,11 @@
 import resume from '../assets/pdf/resume.pdf'
+import pdf from "../assets/png/pfp.png"
 
 
 export const headerData = {
     name: 'Abdul Basit',
     title: "Mobile App Developer",
-    desciption:"There wasn't a bird in the sky, but that was not what caught her attention. It was the clouds. The deep green that isn't the color of clouds, but came with these. She knew what was coming and she hoped she was prepared. ",
-    image: 'https://raw.githubusercontent.com/PhantomScript/asset-container/main/developer-portfolio/landingImg.png',
+    desciption:"A skilled React Native developer specializing in bridging Android and iOS platforms, with expertise in Firebase integration and a commitment to delivering high-quality mobile solutions",
+    image: pdf,
     resumePdf: resume
 }
