@@ -74,6 +74,11 @@ function Testimonials() {
                                                 <img
                                                     src={test.image}
                                                     alt={test.name}
+                                                    style={{borderRadius: '100%',
+                                                    width: '95%',
+                                                    height: '95%',
+                                                
+                                                }}
                                                 />
                                             </div>
                                             <div
