@@ -2,7 +2,12 @@
 import { BiShoppingBag, BiPencil } from "react-icons/bi";
 import { BsCodeSlash, BsClipboardData } from "react-icons/bs";
 import { AiOutlineMail, AiFillAudio } from "react-icons/ai";
-import { FaInternetExplorer,  FaChalkboardTeacher, FaCameraRetro, FaPinterest, FaVideo, FaTabletAlt, FaRegNewspaper } from "react-icons/fa";
+import { FaInternetExplorer,  FaChalkboardTeacher, FaCameraRetro, FaPinterest, FaVideo, FaTabletAlt, FaRegNewspaper,FaAppStore,FaExclamationCircle,FaMoneyCheckAlt,FaCloud,FaFileCode } from "react-icons/fa";
+
+import { IoLogoFirebase } from "react-icons//io5";
+import { MdDeveloperMode } from "react-icons/md";
+import { TiSocialAtCircular } from "react-icons/ti";
+
 
  
 
@@ -14,13 +19,15 @@ export const servicesData = [
     // },
     {
         id: 2,
-        title: 'Content Writing',
-        icon: <BiPencil /> 
+        title: "App deployments",
+        icon: <FaAppStore  
+         style={{color: "white"} }
+        /> 
     },
     {
         id: 3,
-        title: 'Email Marketing',
-        icon: <AiOutlineMail />
+        title: 'UI/UX design implementation',
+        icon: <BsCodeSlash />
     },
     // {
     //     id: 4,
@@ -35,34 +42,34 @@ export const servicesData = [
 
     {
         id: 6,
-        title: 'Web Design',
-        icon: <BsCodeSlash />
+        title: 'Third-party API integration',
+        icon: <FaExclamationCircle />
     },
     {
         id: 7,
-        title: 'Photography',
-        icon: <FaCameraRetro />
+        title: 'Native module development',
+        icon: <MdDeveloperMode />
     },
-    // {
-    //     id: 8,
-    //     title: 'Pinterest Virtual Assistant',
-    //     icon: <FaPinterest />
-    // }, 
+    {
+        id: 8,
+        title: 'Third-Party SDK Integration and Implementation',
+        icon: <FaFileCode />
+    }, 
     {
         id: 9,
-        title: 'Video Editing',
-        icon: <FaVideo />
+        title: 'In-app purchases and subscription',
+        icon: <FaMoneyCheckAlt />
+    },
+    {
+        id: 10,
+        title: 'OAuth Social Authentication Implementation', 
+        icon: <TiSocialAtCircular/>
     },
     // {
-    //     id: 10,
-    //     title: 'Data Entry', 
-    //     icon: <BsClipboardData />
+    //     id: 11,
+    //     title: 'Ebook Writing',
+    //     icon: <FaTabletAlt />
     // },
-    {
-        id: 11,
-        title: 'Ebook Writing',
-        icon: <FaTabletAlt />
-    },
     // {
     //     id: 12,
     //     title: 'Audio Transcription',
@@ -70,8 +77,13 @@ export const servicesData = [
     // },
     {
         id: 13,
-        title: 'Blog Posting',
-        icon: <FaRegNewspaper />
+        title: 'Firebase integration',
+        icon: <IoLogoFirebase />
+    },
+     {
+        id: 12,
+        title: 'Firebase Cloud Functions development',
+        icon: <FaCloud />
     },
 
 ]
