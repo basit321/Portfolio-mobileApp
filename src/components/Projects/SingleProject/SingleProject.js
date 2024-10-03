@@ -1,117 +1,54 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import { FaPlay, FaCode } from 'react-icons/fa';
-import Fade from 'react-reveal/Fade';
-
-import placeholder from '../../../assets/png/placeholder.png';
+import { ThemeContext } from '../../../contexts/ThemeContext';
 import './SingleProject.css';
 
-function SingleProject({ id, name, desc, tags, code, demo, image, theme }) {
-    const useStyles = makeStyles((t) => ({
+function SingleProject({ id, name, desc, tags, code, demo, image }) {
+    const { theme } = useContext(ThemeContext);
+    const useStyles = makeStyles(() => ({
         iconBtn: {
             display: 'flex',
             alignItems: 'center',
             justifyContent: 'center',
-            width: 40,
-            height: 40,
+            width: 35,
+            height: 35,
             borderRadius: 50,
-            border: `2px solid ${theme.tertiary}`,
-            color: theme.tertiary,
-            transition: 'all 0.2s',
+            border: `1px solid #FFF`,
+            color: '#FFF',
+            transition: 'all 0.3s',
             '&:hover': {
-                backgroundColor: theme.secondary,
-                color: theme.primary,
+                backgroundColor: '#333',
+                color: '#FFF',
                 transform: 'scale(1.1)',
-                border: `2px solid ${theme.secondary}`,
             },
         },
         icon: {
-            fontSize: '1.1rem',
+            fontSize: '1.2rem',
             transition: 'all 0.2s',
-            '&:hover': {},
         },
     }));
 
     const classes = useStyles();
 
     return (
-        <Fade bottom>
-            <div
-                key={id}
-                className='singleProject'
-                style={{ backgroundColor: theme.primary400 }}
-            >
-                <div className='projectContent'>
-                    <h2
-                        id={name.replace(' ', '-').toLowerCase()}
-                        style={{ color: theme.tertiary }}
-                    >
-                        {name}
-                    </h2>
-                    <img src={image ? image : placeholder} alt={name} />
-                    <div className='project--showcaseBtn'>
-                        <a
-                            href={demo}
-                            target='_blank'
-                            rel='noreferrer'
-                            className={classes.iconBtn}
-                            aria-labelledby={`${name
-                                .replace(' ', '-')
-                                .toLowerCase()} ${name
-                                .replace(' ', '-')
-                                .toLowerCase()}-demo`}
-                        >
-                            <FaPlay
-                                id={`${name
-                                    .replace(' ', '-')
-                                    .toLowerCase()}-demo`}
-                                className={classes.icon}
-                                aria-label='Demo'
-                            />
-                        </a>
-                        <a
-                            href={code}
-                            target='_blank'
-                            rel='noreferrer'
-                            className={classes.iconBtn}
-                            aria-labelledby={`${name
-                                .replace(' ', '-')
-                                .toLowerCase()} ${name
-                                .replace(' ', '-')
-                                .toLowerCase()}-code`}
-                        >
-                            <FaCode
-                                id={`${name
-                                    .replace(' ', '-')
-                                    .toLowerCase()}-code`}
-                                className={classes.icon}
-                                aria-label='Code'
-                            />
-                        </a>
-                    </div>
-                </div>
-                <p
-                    className='project--desc'
-                    style={{
-                        background: theme.secondary,
-                        color: theme.tertiary,
-                    }}
-                >
-                    {desc}
-                </p>
-                <div
-                    className='project--lang'
-                    style={{
-                        background: theme.secondary,
-                        color: theme.tertiary80,
-                    }}
-                >
+        <div key={id} className='singleProjectDark'
+        style={{ backgroundColor: theme.primary400 }}
+        >
+            <div className='projectImageWrapper'>
+                <img src={image} alt={name} className='projectImage' />
+            </div>
+            <div className='projectContentDark'>
+                <h2 className='projectTitleDark'>{name}</h2>
+                <p className='projectDescDark'>{desc}</p>
+              
+                <div className='projectTags'>
                     {tags.map((tag, id) => (
-                        <span key={id}>{tag}</span>
+                        <span key={id} className='projectTag'>{tag}</span>
                     ))}
                 </div>
             </div>
-        </Fade>
+        </div>
     );
 }
 
