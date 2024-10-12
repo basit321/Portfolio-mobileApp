@@ -1,4 +1,4 @@
-import resume from '../assets/pdf/resume.pdf'
+import resume from '../assets/pdf/Cv.pdf'
 import pdf from "../assets/png/pfp.png"
 
 
