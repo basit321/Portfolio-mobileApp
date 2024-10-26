@@ -7,7 +7,7 @@ export const achievementData = {
             details : 'Certification that validates expertise in building cross-platform mobile applications using React Native.',
             date : 'June 15, 2021',
             field : 'Mobile Development',
-            image : "https://viitorcloud.com/blog/wp-content/uploads/2022/06/React-Native-Framework-for-Mobile-App-Development.jpg"
+            image : 'https://www.mindinventory.com/blog/wp-content/uploads/2022/10/react-native-app-development-cost.png'
         },
         {
             id : 2,
